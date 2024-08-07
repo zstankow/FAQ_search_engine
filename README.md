@@ -1,8 +1,12 @@
 # Creating a simple search engine
 
-### Goals of this notebook
+## Goal of this notebook:
 
-1) Explore a few different ways we can implement a simple search engine for queries. The goal is that the user can type a query related to the zoomcamp course FAQ pages, and can receive a few results in order of their relevance. We will see how different methods yield different results and which are more effective in extracting the most relevant results. 
+- Understand different techniques in general: Explore a few different ways we can implement a simple search engine for queries. The goal is that the user can type a query related to the zoomcamp course FAQ pages, and can receive a few results in order of their relevance. We will see how different methods yield different results and which are more effective in extracting the most relevant results. 
+
+- Explore different vector search methods: Using methods like CountVectorizer/TfidfVectorizer, and then slightly more sophisticated methods using singular value reduction (dimensionality reduction methods) like SVD and NMF to embed the vector and gain semantic meaning.
+-----------------------------------------
+## Text vs Vector Search
 
 In this exercise we will look at both __Text Search and Semantic/Vector__ search methods. Note that both these methods are under the umbrella of the 'Bag of Words' method, which means that the order of the words has no meaning. This has obvious limitations and can be overcome with more advanced neural networks like BERT. 
 
@@ -16,7 +20,7 @@ In text search, we will find all the documents that contain words like 'discover
 
 Semantically, both queries have the same meaning, but with text search we will not get good results. This is when a semantic/vector approach will perform much better. 
 
-2) Understand the steps of getting relevant search results using more basic methods like CountVectorizer/TfidfVectorizer, and then slightly more sophisticated methods using singular value reduction (dimensionality reduction methods) like SVD and NMF to embed the vector and gain semantic meaning.
+## Vector Search Methods
 
 Here is a quick breakdown of the steps of each of these methods:
 
